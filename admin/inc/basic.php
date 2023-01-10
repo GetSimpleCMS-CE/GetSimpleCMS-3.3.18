@@ -511,7 +511,7 @@ function strip_quotes($text)  {
  */
 function encode_quotes($text)  { 
 	$text = strip_tags($text);
-	if (version_compare(PHP_VERSION, "5.2.3")  >= 0) {	
+	if (version_compare(PHP_VERSION, "7.2")  >= 0) {	
 		$text = htmlspecialchars($text, ENT_QUOTES, 'UTF-8', false);
 	} else {	
 		$text = htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
